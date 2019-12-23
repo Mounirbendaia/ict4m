@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+   <title>Home</title>
+   <link rel="icon" href="icon.PNG">
+        <meta charset=U TF-8 />
+        <style>
+        body {
+  background-image: url("image/hb.png");
+  background-repeat: no-repeat;
+
+}
+
+        .header{
+          margin-top: 30px;
+          margin-left: 27px;
+        }
+
+
+
+          .navbar {
+            overflow: hidden;
+
+            font-family: Arial;
+          }
+
+          .navbar a {
+            float: left;
+            font-size: 16px;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            margin-right: 30px;
+            margin-left: 50px;
+          }
+
+          .dropdown {
+            margin-left: 110px;
+            float: left ;
+            overflow: hidden;
+          }
+
+
+
+          .dropdown .dropbtn {
+            font-size: 16px;
+            border: none;
+            outline: none;
+            color: white;
+            padding: 14px 16px;
+            background-color: inherit;
+            font-family: inherit;
+            margin:0 ;
+          }
+
+          .navbar a:hover, .dropdown:hover .dropbtn {
+            color: #3bd9a7;
+          }
+
+
+          .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #101820FF;
+            opacity: 0.8;
+            filter: alpha(opacity=50);
+            min-width: 40px;
+            max-width: 240px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            margin-left: -50px;
+
+
+          }
+
+
+          .dropdown-content a {
+            float: none;
+            color: white;
+            padding: 12px 0px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+            margin-left: 40px;
+
+          }
+
+          .dropdown:hover .dropdown-content {
+            display: block;
+          }
+
+
+
+          #myImg {
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+            margin-left: 620px;
+            margin-top: 480px;
+
+          }
+
+          #myImg:hover {opacity: 0.8;}
+
+          .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            padding-top: 100px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: #2E8B57;
+            background-color: rgba(0,0,0,0.9);
+          }
+
+
+          .modal-content #tx1 {
+
+            display: block;
+            width: 80%;
+            max-width: 700px;
+          font-family: "Times New Roman", Times, serif;
+            font-size: 21px;
+            letter-spacing: 0px;
+            word-spacing: 6px;
+            color: white;
+            font-weight: normal;
+            text-decoration: none solid rgb(68, 68, 68);
+            font-weight: 700;
+            font-variant: normal;
+            margin-left: 300px;
+            margin-right: 300px;
+            margin-top: -50px;
+          }
+          .modal-content #tx2 {
+
+            font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+            font-size: 18px;
+            letter-spacing: 0px;
+            word-spacing: 3px;
+            color: white;
+            font-weight: normal;
+            text-decoration: none solid rgb(68, 68, 68);
+            font-weight: 700;
+            font-variant: small-caps;
+            text-transform: lowercase;
+            margin-left: 300px;
+            margin-right: 300px;
+            margin-top: 0px;
+          }
+          .modal a{
+           float: right;
+           margin-left: 0px;
+           margin-top: 30px;
+           margin-right: 4px;
+
+          }
+          .modal #fb{
+             margin-right: 30px;
+          }
+
+
+          #caption {
+            margin: auto;
+            display: block;
+            width: 80%;
+            max-width: 700px;
+            text-align: center;
+            color: #ccc;
+            padding: 10px 0;
+            height: 150px;
+          }
+          .modal-content, #caption {
+            animation-name: zoom;
+            animation-duration: 0.6s;
+          }
+
+          @keyframes zoom {
+            from {transform:scale(0)}
+            to {transform:scale(1)}
+          }
+
+          .close {
+            position: absolute;
+            top: 15px;
+            right: 35px;
+            color: #f1f1f1;
+            font-size: 40px;
+            font-weight: bold;
+            transition: 0.3s;
+          }
+
+          .close:hover,
+          .close:focus {
+            color: #bbb;
+            text-decoration: none;
+            cursor: pointer;
+          }
+
+          @media only screen and (max-width: 700px){
+            .modal-content {
+              width: 100%;
+            }
+          }
+
+</style>
+    </head>
+    <body>
+    <header>
+
+      <div class="header" id="myHeader" >
+  <div class="navbar">
+    <div class="dropdown">
+    <button class="dropbtn">Submission&#9660;
+      <i class="active"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="subguid.html">Submission guidelines</a>
+      <a href="callforpapers.html">Call for papers</a>
+      <a href="impdate.html">Important dates</a>
+
+    </div>
+  </div>
+    <a   href="parallel.html">Parallel sessions</a>
+    <a   href="regandfee.html">Registration & Fees</a>
+    <a   href="confeprog.html">Conference program</a>
+    <a   href="speakers.html">Speakers</a>
+  </div>
+</div>
+<footer class="last">
+
+<img id="myImg" src="image/about.PNG"   width="50" height="50">
+
+
+<div id="myModal" class="modal">
+
+
+  <span class="close">&times;</span>
+
+
+  <div class="modal-content"  >
+    <p id="tx1" align="justify"><font color="#3bd9a7">ICT4M 2020</font> is a conference that gathers academicians, researchers, practitioners, professionals,
+  and students to address the challenges of Information and Communication Technology (ICT) for
+  the Muslim world. This conference has been conducted seven times so far with the most recent
+  location in Kuala Lumpur, Malaysia on 23-25 March 2020.
+  In conjunction with the World Congress on Integration and Islamicization, ICT4M 2020 will be
+  held on 27-29 March 2020 in Kuantan, Pahang. The theme for this year is <font color="#3bd9a7">“Mental Health and
+  Well Being in the 4th Industrial Revolution”</font>.
+  All accepted papers will be submitted for indexing in <font color="#3bd9a7">IEEE Xplore</font>. Selected papers will be invited
+  for publications in Scopus journals.<p>
+  <p id="tx2" align="left"><font color="red">CONTACT US:</font><br>
+SECRETARIAT OF ICT4M 2020<br>
+Kulliyyah of Information and Communication Technology (KICT),<br>
+International Islamic University Malaysia (IIUM),<br>
+Jalan Gombak, 53100 Kuala Lumpur, Malaysia.<br>
+Email :<font color="#3bd9a7"> ict4m@iium.edu.my</font><br>
+Website :<font color="#3bd9a7"> https://ict4m.iium.edu.my</font><br>
+Tel. <font color="#3bd9a7">+603-6196 5601</font>
+</p>
+
+
+</div>
+
+<a id ="fb" href="https://www.facebook.com/pg/ICT4M2016/posts/"><img id="fb" src="image/fb.PNG"   width="25" height="25"></a>
+<a id ="tw"href="https://twitter.com/ict4m2018"><img id="tw" src="image/tw.PNG"   width="25" height="25"></a>
+</div>
+ </footer>
+<script>
+
+var modal = document.getElementById("myModal");
+
+
+var img = document.getElementById("myImg");
+var modalImg = document.getElementById("img01");
+
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+
+}
+
+
+var span = document.getElementsByClassName("close")[0];
+
+
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+</script>
+
+</body>
+</html>
